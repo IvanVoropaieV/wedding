@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("./assets/fonts/MontserratAlternates.ttf");
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("./assets/fonts/RobotoSerif-Variable.ttf");
+}
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+.button {
+    border-radius: 8px;
+    background: linear-gradient(96deg, #3a5737 0%, black 100%);
+    width: 230px;
+    height: 50px;
+    padding: 19px;
+    box-sizing: border-box;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.header {
+    position: relative;
+    width: 100%;
+}
+.header__line {
+    width: 2px;
+    height: 100px;
+    background-color: black;
+    margin: 0 auto;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+}
+.header__preview {
+    margin: auto;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -100px;
+    left: 0;
+    right: 0;
+    background: url("./assets/images/logo.png");
+    animation-name: mover;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(170px); }
+}
+.container {
+    padding: 0 25px;
+}
+.header__inner {
+    padding-top: 80px;
+    text-align: center;
+}
+.header__img {
+    animation-name: blackout;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes blackout {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.header__title {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    animation-name: blackout;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.header__text {
+    margin-top: 5px;
+    animation-name: blackout;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.arrow {
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #000000;
+    border-right: 3px solid #000000;
+    margin: 25px auto;
+    transform: rotate(135deg);
+    animation: spin 1.4s infinite linear;
+}
+.arrow-bottom {
+    transform: rotate(135deg);
+}
+@keyframes spin {
+    0%   { transform: translateY(0) rotate(135deg); }
+    50%  { transform: translateY(-10px) rotate(135deg); }
+    100% { transform: translateY(0) rotate(135deg); }
+}
