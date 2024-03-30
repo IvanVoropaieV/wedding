@@ -106,7 +106,7 @@ body {
     height: 55px;
     border-top: 5px solid #000000;
     border-right: 5px solid #000000;
-    margin: 40px auto;
+    margin: 40px auto 250px auto;
     transform: rotate(135deg);
     animation: spin 1.4s infinite linear;
 }
