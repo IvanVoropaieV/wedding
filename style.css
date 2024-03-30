@@ -33,17 +33,21 @@ body {
     font-size: 16px;
     text-transform: uppercase;
 }
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+}
 .header {
     position: relative;
     width: 100%;
 }
 .header__line {
     width: 4px;
-    height: 110px;
+    height: 0;
     background-color: black;
     margin: 0 auto;
-    opacity: 0;
-    animation: ani 3.0s forwards;
+    animation: ani 4.0s forwards;
 }
 .header__preview {
     margin: auto;
@@ -59,8 +63,8 @@ body {
     animation-fill-mode: forwards;
 }
 @keyframes ani {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {height: 0;}
+    100% {height: 110px;}
 }
 @keyframes mover {
     0% { transform: translateY(0); }
@@ -86,9 +90,6 @@ body {
 }
 .header__title {
     margin-top: 25px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 50px;
     animation-name: blackout;
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -116,4 +117,59 @@ body {
     0%   { transform: translateY(0) rotate(135deg); }
     50%  { transform: translateY(-10px) rotate(135deg); }
     100% { transform: translateY(0) rotate(135deg); }
+}
+.description {
+    text-align: center;
+}
+.description__items {
+    display: flex;
+    padding: 25px 100px;
+}
+.description__item-left {
+    position: relative;
+    display: inline-block;
+}
+.description__line {
+    width: 3px;
+    height: 550px;
+    background-color: black;
+    z-index: 0;
+}
+.description__date {
+    position: absolute;
+    background: white;
+    top: 60px;
+    font-size: 50px;
+    z-index: 1;
+    left: -27px;
+    transition: top 0.8s;
+}
+.description__item-right {
+    padding: 120px 20px;
+    margin-left: 30px;
+}
+.description__text {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.time {
+    padding-top: 150px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.time__inner {
+    margin-top: 80px;
+}
+.time__inner img {
+    width: 250px;
+    height: 250px;
+}
+.time__time {
+    font-size: 45px;
+}
+.time__text {
+    font-size: 35px;
 }
