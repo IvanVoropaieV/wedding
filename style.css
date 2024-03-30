@@ -38,8 +38,8 @@ body {
     width: 100%;
 }
 .header__line {
-    width: 2px;
-    height: 100px;
+    width: 4px;
+    height: 110px;
     background-color: black;
     margin: 0 auto;
     opacity: 0;
@@ -48,12 +48,12 @@ body {
 .header__preview {
     margin: auto;
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     top: -100px;
     left: 0;
     right: 0;
-    background: url("./assets/images/Logo.png");
+    background: url("./assets/images/logo.png");
     animation-name: mover;
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -70,10 +70,12 @@ body {
     padding: 0 25px;
 }
 .header__inner {
-    padding-top: 80px;
+    padding-top: 230px;
     text-align: center;
 }
 .header__img {
+    width: 800px;
+    height: 800px;
     animation-name: blackout;
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -83,26 +85,27 @@ body {
     100% {opacity: 1;}
 }
 .header__title {
-    margin-top: 10px;
+    margin-top: 25px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 50px;
     animation-name: blackout;
     animation-duration: 4s;
     animation-fill-mode: forwards;
 }
 .header__text {
-    margin-top: 5px;
+    margin-top: 15px;
     animation-name: blackout;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+    font-size: 30px;
 }
 .arrow {
     width: 20px;
     height: 20px;
     border-top: 3px solid #000000;
     border-right: 3px solid #000000;
-    margin: 25px auto;
+    margin: 40px auto;
     transform: rotate(135deg);
     animation: spin 1.4s infinite linear;
 }
