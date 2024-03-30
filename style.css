@@ -4,11 +4,11 @@
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url("./assets/fonts/MontserratAlternates.ttf");
+    src: url("assets/fonts/MontserratAlternates.ttf");
 }
 @font-face {
     font-family: 'Roboto';
-    src: url("./assets/fonts/RobotoSerif-Variable.ttf");
+    src: url("assets/fonts/RobotoSerif-Variable.ttf");
 }
 body {
     background-color: white;
@@ -53,7 +53,7 @@ body {
     top: -100px;
     left: 0;
     right: 0;
-    background: url("./assets/images/logo.png");
+    background: url("assets/images/logo.png");
     animation-name: mover;
     animation-duration: 4s;
     animation-fill-mode: forwards;
